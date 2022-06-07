@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/actor_photo_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="8dp">
+
+        <ImageView
+            android:id="@+id/actor_photo_imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/roboto"
+        android:lineSpacingExtra="2sp"
+        android:maxLines="2"
+        android:text="Robert\nDowney Jr."
+        android:textColor="@color/light_silver"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/actor_photo_cardView"
+        app:layout_constraintTop_toBottomOf="@id/actor_photo_cardView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
